@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charSet="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wrath / commands</title>
     <meta name="robots" content="index,follow" />
-    <meta name="description" content="votre bot discord incontournable pour une gestion et un engagement de communauté fluides" />
+    <meta name="description" content="your go-to discord bot for seamless community management and engagement" />
     <meta name="twitter:card" content="player cards" />
     <meta name="twitter:site" content="https://wrath.best" />
     <meta property="og:title" content="wrath" />
     <meta content="#2b2d31" data-react-helmet="true" name="theme-color">
-    <meta property="og:description" content="votre bot discord incontournable pour une gestion et un engagement de communauté fluides" />
+    <meta property="og:description" content="your go-to discord bot for seamless community management and engagement" />
     <meta property="og:url" content="https://wrath.best" />
     <meta property="og:image" content="https://wrath.best/img/wrath.png" />
     <meta property="og:image:type" content="image/png" />
@@ -20,6 +20,7 @@
     <link rel="shortcut icon" href="https://wrath.best/img/wrath.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap">
     <link rel="alternate" hreflang="en" href="https://wrath.best" />
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -84,6 +85,16 @@
         .command-description {
             font-size: 14px;
         }
+
+                
+        @media only screen and (max-width: 600px) {
+            .category {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+
     </style>
 </head>
 <body>
@@ -724,13 +735,12 @@
 
         categories.forEach(function (category) {
             if (category.id === categoryId) {
-                category.style.display = "flex";
+                category.style.display = "block"; 
             } else {
                 category.style.display = "none";
             }
         });
     }
-
 </script>
 </body>
 </html>
