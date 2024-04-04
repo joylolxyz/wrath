@@ -735,12 +735,33 @@
 
         categories.forEach(function (category) {
             if (category.id === categoryId) {
-                category.style.display = "block"; 
+                if (window.innerWidth <= 600) {
+                    category.style.display = "block"; 
+                } else {
+                    category.style.display = "flex";
+                }
             } else {
                 category.style.display = "none";
             }
         });
     }
+
+    window.addEventListener('resize', function() {
+        var categories = document.querySelectorAll('.commands-container');
+        var categoryButtons = document.querySelectorAll('.category');
+
+        var selectedCategory = document.querySelector('.selected');
+
+        if (window.innerWidth <= 600 && selectedCategory) {
+            categories.forEach(function (category) {
+                if (category.id === selectedCategory.id) {
+                    category.style.display = "block";
+                } else {
+                    category.style.display = "none";
+                }
+            });
+        }
+    });
 </script>
 </body>
 </html>
