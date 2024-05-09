@@ -67,6 +67,7 @@
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 20px;
+            overflow-y: auto;
         }
 
         .command-box {
@@ -87,12 +88,18 @@
             font-size: 14px;
         }
 
+        .wrapper {
+            overflow-y: auto;
+            height: 100vh; 
+        }
+
+
                 
         @media screen and (max-width: 600px) {
             .category {
                 padding: 8px;
                 margin: 3px;
-                width: calc(50% - 10px);
+                width: calc(50% - 10px); 
             }
         }
 
@@ -740,12 +747,12 @@
                 if (window.innerWidth <= 600) {
                     category.style.display = "block"; 
                 } else {
-                    category.style.display = "flex";
+                    category.style.display = "block"; 
                 }
             } else {
                 category.style.display = "none";
             }
-        });
+        })
     }
 
     window.addEventListener('resize', function() {
