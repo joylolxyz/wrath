@@ -28,23 +28,23 @@
             color: #ffffff;
             padding: 20px;
             margin: 0;
-            overflow-y: hidden;
+            overflow-y: auto;
         }
-
-        .category-bar {
+    
+       .category-bar {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             margin-bottom: 20px;
         }
-
-        a, .category {
+    
+        a,.category {
             display: inline-block;
             padding: 10px 5px;
             width: 100px;
             border-radius: 10px;
             background-color: #1b1b1b;
-            color: #fafafa;
+            color: #ffffff;
             font-size: 14px;
             cursor: pointer;
             transition: background-color 0.3s, color 0.3s;
@@ -52,13 +52,13 @@
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
-
-        .category.selected {
-            background-color: #333333;
+    
+       .category.selected {
+            background-color: #2b2b2b;
             color: #ffffff;
         }
-
-        .commands-container {
+    
+       .commands-container {
             display: none;
             flex-wrap: wrap;
             justify-content: center;
@@ -68,49 +68,59 @@
             padding-right: 10px;
             padding-bottom: 10px;
         }
-
-        .commands-container::-webkit-scrollbar {
-            width: 10px;
-            height: 10px;
+    
+       .commands-container::-webkit-scrollbar {
+            width: 10px; 
+            height: 10px; 
         }
-
-        .commands-container::-webkit-scrollbar-track {
+    
+       .commands-container::-webkit-scrollbar-track {
             background-color: #1b1b1b;
             border-radius: 10px;
         }
-
-        .commands-container::-webkit-scrollbar-thumb {
+    
+       .commands-container::-webkit-scrollbar-thumb {
             background-color: #a8a8a8;
             border-radius: 10px;
         }
-
-        .command-box {
+    
+       .command-box {
             flex-basis: calc(30% - 20px);
             padding: 10px;
             margin: 10px;
             border-radius: 10px;
             background-color: #1b1b1b;
         }
-
-        .command-name {
+    
+       .command-name {
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 10px;
         }
-
-        .command-description {
+    
+       .command-description {
             font-size: 14px;
         }
-
+    
         @media screen and (max-width: 600px) {
-            .category {
+           .category {
                 padding: 8px;
                 margin: 3px;
                 width: calc(50% - 10px); 
             }
+           .commands-container {
+                height: auto; 
+            }
+           .commands-container::-webkit-scrollbar {
+                width: 10px; 
+                height: calc(100vh - 100px);
+            }
+           .commands-container::-webkit-scrollbar-thumb {
+                height: calc(100vh - 100px); 
+            }
         }
-
-        .wrapper {
+    
+       .wrapper {
             overflow-y: auto;
             height: 100vh;
         }
