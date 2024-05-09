@@ -1,113 +1,114 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charSet="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>wrath</title>
-    <meta name="robots" content="index,follow" />
-    <meta name="description" content="your go-to discord bot for seamless community management and engagement" />
-    <meta name="twitter:card" content="player cards" />
-    <meta name="twitter:site" content="https://wrath.best" />
-    <meta property="og:title" content="wrath" />
-    <meta content="#2b2d31" data-react-helmet="true" name="theme-color">
-    <meta property="og:description" content="coming soon" />
-    <meta property="og:url" content="https://wrath.best" />
-    <meta property="og:image" content="https://wrath.best/img/wrath.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="500" />
-    <meta property="og:image:height" content="500" />
-    <meta property="og:locale" content="en" />
-    <link rel="shortcut icon" href="https://wrath.best/img/wrath.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap">
-    <link rel="alternate" hreflang="fr" href="https://wrath.best/fr" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wrath</title>
+  <meta name="robots" content="index,follow" />
+  <meta name="description" content="your go-to discord bot for seamless community management and engagement" />
+  <meta name="twitter:card" content="player cards" />
+  <meta name="twitter:site" content="https://wrath.best" />
+  <meta property="og:title" content="wrath" />
+  <meta content="#2b2d31" data-react-helmet="true" name="theme-color">
+  <meta property="og:description" content="coming soon" />
+  <meta property="og:url" content="https://wrath.best" />
+  <meta property="og:image" content="https://wrath.best/img/wrath.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="500" />
+  <meta property="og:image:height" content="500" />
+  <meta property="og:locale" content="en" />
+  <link rel="shortcut icon" href="https://wrath.best/img/wrath.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #030303;
+      animation: fade-in 1s ease-in-out;
+    }
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #050505;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            overflow: hidden;
-        }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
 
-        .container {
-            text-align: center;
-        }
+    .container {
+      animation: slide-in 1s ease-in-out;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
-        h1 {
-            color: #ffffff;
-        }
+    @keyframes slide-in {
+      0% {
+        transform: translate(-50%, -50%) translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+      }
+    }
 
-        h2 {
-            color: #8d8d8d;
-            font-size: 20px;
-            font-weight: 100;
-            margin: 0 auto;
-            max-width: 100%;
-            word-wrap: break-word;
-        }
+    h1, h2, h3 {
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+    }
 
-        h3 {
-            color: #8d8d8d;
-            font-size: 10px;
-            margin-top: 5px;
-            font-weight: 1
-        }
+    .buttons-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
 
-        .buttons-container {
-            margin-top: 20px;
-        }
+    .button {
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 5px;
+      border-radius: 10px;
+      background-color: #0a0a0a;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      position: relative;
+      overflow: hidden;
+      transition: background-color 0.3s ease-in-out;
+    }
 
-        .button {
-            text-decoration: none;
-        }
+    .button:hover {
+      background-color: rgba(109, 109, 109, 0.2);
+    }
 
-        a {
-            display: inline-block;
-            padding: 10px 5px;
-            width: 150px;
-            border-radius: 3px;
-            border: none;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s, color 0.3s;
-            margin: 0 5px;
-        }
+    .button:active {
+      background-color: #222222;
+    }
 
-        .commands {
-            background-color: #111111;
-            color: #ffffff;
-        }
-
-        .invite {
-            background-color: #ffffff;
-            color: #000000;
-        }
-
-        .commands:hover {
-            background-color: #333333;
-        }
-
-        .invite:hover {
-            background-color: #bdbdbd;
-        }
-    </style>
+    .button:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  </style>
 </head>
-
-
 <body>
-    <div class="container">
-        <h1>wrath</h1>
-        <h2>your go-to discord bot for seamless community management and engagement</h2>
-        <h3>and smoking joys period blood flavoured e-vape</h3>
-        <div class="buttons-container">
-            <a href="/cmds" class="button commands">commands</a>
-            <a href="https://discord.com/oauth2/authorize?client_id=1211040776172077128&permissions=8&scope=bot" class="button invite">invite</a>
-        </div>
+  <div class="container">
+    <h1 class="text-5xl font-bold mb-4">wrath</h1>
+    <h2 class="text-lg text-gray-400 mb-2">your go-to discord bot for seamless community management and engagement</h2>
+    <div class="buttons-container">
+      <a href="/cmds" class="button">commands</a>
+      <a href="https://discord.com/oauth2/authorize?client_id=121104077603176449&scope=bot&permissions=8" class="button">invite</a>
+      <a href="https://discord.gg/wrathbot" class="button">support</a>
     </div>
+  </div>
 </body>
-
 </html>
