@@ -1,111 +1,144 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charSet="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>wrath</title>
-    <meta name="robots" content="index,follow" />
-    <meta name="description" content="terms of service for wrath" />
-    <meta name="twitter:card" content="player cards" />
-    <meta name="twitter:site" content="https://wrath.best" />
-    <meta property="og:title" content="wrath" />
-    <meta content="#2b2d31" data-react-helmet="true" name="theme-color">
-    <meta property="og:description" content="terms of service for wrath" />
-    <meta property="og:url" content="https://wrath.best" />
-    <meta property="og:image" content="https://wrath.best/img/wrath.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="500" />
-    <meta property="og:image:height" content="500" />
-    <meta property="og:locale" content="en" />
-    <link rel="shortcut icon" href="https://wrath.best/img/wrath.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap">
-    <link rel="alternate" hreflang="en" href="https://wrath.best" />
-    <style>
-        body {
-            margin: 0;
-            overflow: auto;
-            background-color: #050505;
-            color: white;
-            font-family: 'system-ui', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service</title>
+  <meta name="robots" content="index,follow" />
+  <meta name="description" content="Terms of Service for wrath, your go-to discord bot for seamless community management and engagement" />
+  <meta name="twitter:card" content="player cards" />
+  <meta name="twitter:site" content="https://wrath.best" />
+  <meta property="og:title" content="Terms of Service" />
+  <meta content="#2b2d31" data-react-helmet="true" name="theme-color">
+  <meta property="og:description" content="Terms of Service for wrath, your go-to discord bot for seamless community management and engagement" />
+  <meta property="og:url" content="https://wrath.best/tos" />
+  <meta property="og:image" content="https://wrath.best/img/wrath.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="500" />
+  <meta property="og:image:height" content="500" />
+  <meta property="og:locale" content="en" />
+  <link rel="shortcut icon" href="https://wrath.best/img/wrath.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #030303;
+      animation: fade-in 1s ease-in-out;
+    }
 
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
 
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: transparent;
-            border-radius: 8px;
-            box-shadow: none;
-        }
+    .container {
+      animation: slide-in 1s ease-in-out;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
-        h1 {
-            font-size: rem;
-            font-weight: bold;
-            color: rgb(255, 255, 255);
-        }
+    @keyframes slide-in {
+      0% {
+        transform: translate(-50%, -50%) translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+      }
+    }
 
-        h2 {
-            font-size: 1rem;
-            font-weight: bold;
-            color: rgb(255, 255, 255);
-        }
+    h1, h2, h3 {
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+    }
 
-        h3 { 
-            font-size: 0.8rem;
-            font-weight: 100;
-            color: rgb(255, 255, 255)
-        }
+    .buttons-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
 
-        p {
-            margin-top: 10px;
-            font-size: 1rem;
-            font-weight: normal;
-            text-align: justify;
-            color: rgb(255, 255, 255);
-        }
-    </style>
+    .button {
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 5px;
+      border-radius: 10px;
+      background-color: #0a0a0a;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      position: relative;
+      overflow: hidden;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .button:hover {
+      background-color: rgba(109, 109, 109, 0.2);
+    }
+
+    .button:active {
+      background-color: #222222;
+    }
+
+    .button:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  </style>
 </head>
-
 <body>
-
-    <main>
-        <h1>Terms of Service</h1>
-        <h3>Last Updated: 08/04/2024</h3>
-        <p>
-            The Bot is designed to perform various functions and commands within Discord servers. You may use the Bot for personal or non-commercial purposes. You are responsible for the content and activities that occur within your Discord server while using the Bot.
-        </p>
-        <h2>Age Requirement:</h2>
-        <p>
-            You must be at least 13 years old to use the Bot. By using the Bot, you confirm that you are at least 13 years of age or have the consent of a parent or legal guardian.
-        </p>
-        <h2>Prohibited Activities:</h2>
-        <p>
-            You agree not to use the Bot for any unlawful, abusive, harassing, harmful, or inappropriate purposes. You shall not attempt to disrupt the proper functioning of the Bot or its associated systems.
-        </p>
-        <h2>Bot Modifications:</h2>
-        <p>
-            You may not modify, adapt, or alter the Bot's code in any way or attempt to reverse engineer it. You may not create derivative works based on the Bot without our explicit permission.
-        </p>
-        <h2>Intellectual Property:</h2>
-        <p>
-            All rights, title, and interest in the Bot, including any intellectual property rights, remain the property of the Bot's creators. You may not claim ownership of the Bot or use it to misrepresent yourself or your affiliation with the Bot's creators.
-        </p>
-        <h2>Privacy:</h2>
-        <p>
-            The Bot may collect and store certain user data to operate effectively. Please review our Privacy Policy to understand how we handle your information.
-        </p>
-        <h2>Liability:</h2>
-        <p>
-            The Bot's creators shall not be held liable for any damages, losses, or disruptions caused by the use or misuse of the Bot. We do not guarantee the Bot's uninterrupted availability or its functionality at all times.
-        </p>
-        <h2>Termination:</h2>
-        <p>
-            The Bot's creators reserve the right to terminate or suspend your access to the Bot at any time and for any reason without prior notice. You may also stop using the Bot and terminate these TOS at any time by removing the Bot from your Discord server.
-        </p>
-    </main>
+    <div class="container">
+        <h1 class="text-5xl font-bold mb-4">Terms of Service</h1>
+        <h2 class="text-lg text-gray-400 mb-2">This was last updated 1/05/2024, 6:23PM GMT</h2>
+        <div class="text-gray-300">
+          <h3 class="text-2xl font-bold mb-4">What data do we store?</h3>
+          <p class="mb-4">
+            We prioritize the protection of user privacy and do not collect any personal information such as passwords or other credentials. The data we do collect comprises User IDs, Server IDs, Channel IDs, and select Role IDs. It's crucial to note that our bot never solicits personal data from users, and we actively discourage any actions that contravene Discord's Terms of Service.
+          </p>
+      
+          <h3 class="text-2xl font-bold mb-4">Why do we need this data?</h3>
+          <p class="mb-4">
+            The data is required for the proper functioning of the bot features like Warning System, Logging and Autoroles. Without this data, our bot will not be able to perform these activities and thus making the features inaccessible for users.
+          </p>
+      
+          <h3 class="text-2xl font-bold mb-4">How do we use this data?</h3>
+          <p class="mb-4">
+            The data is used for the proper functioning for the Warning System, Logging activities and Autorole features of our Bot. User IDs are used to identify the users, Channel IDs are used to send the messages to the desginated channels and Server IDs to identify the Servers and the Role IDs are used for the Autorole feature.
+          </p>
+      
+          <h3 class="text-2xl font-bold mb-4">How long do we store your data?</h3>
+          <p class="mb-4">
+            The data is stored as long as the bot is in your Server and as soonas the bot is kicked or removed from the Server, the data is deleted and is no longer to accessable to anyone.
+          </p>
+      
+          <h3 class="text-2xl font-bold mb-4">Who do we share this data with?</h3>
+          <p class="mb-4">
+            We never share your data with anyone except for MongoDB Inc whom is a DataBase Company and all the data for our Bot is stored on the MongoDB Servers and According to MongoDB Inc. the data is only accessable by us.
+          </p>
+      
+          <h3 class="text-2xl font-bold mb-4">Any concerns?</h3>
+          <p>
+            If you have any concerns or queries relating our privacy policy or our bot or if you want your data to be removed, You can contact joyclens directy on our Support Server!
+          </p>
+    <div class="buttons-container">
+      <a href="/cmds" class="button">Commands</a>
+      <a href="https://discord.com/oauth2/authorize?client_id=121104077603176449&scope=bot&permissions=8" class="button">Invite</a>
+      <a href="https://discord.gg/wrathbot" class="button">Support</a>
+    </div>
+  </div>
 </body>
-
 </html>
